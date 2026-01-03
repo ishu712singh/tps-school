@@ -53,7 +53,8 @@
                   "maximumError": "8kB"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "baseHref": "https://ishu712singh.github.io/tps-school/"
             },
             "development": {
               "optimization": true,
