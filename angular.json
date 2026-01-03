@@ -80,7 +80,10 @@
           "builder": "@angular/build:unit-test"
         },
         "deploy": {
-          "builder": "angular-cli-ghpages:deploy"
+          "builder": "angular-cli-ghpages:deploy",
+          "baseHref": "https://ishu712singh.github.io/tps-school/",
+          "name": "TPS School",
+          "email": "ishu712singh"
         }
       }
     }
