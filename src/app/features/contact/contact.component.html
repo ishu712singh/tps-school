@@ -12,18 +12,18 @@
               <div class="mb-3">
                 <i class="fas fa-map-marker-alt text-warning me-3"></i>
                 <strong>Address:</strong><br>
-                123 Education Street<br>
-                Hinauta City, HC 12345
+                village and post Hinauta<br>
+                shahpur dist- Rewa (M.P)
               </div>
               <div class="mb-3">
                 <i class="fas fa-phone text-warning me-3"></i>
                 <strong>Phone:</strong><br>
-                (555) 123-4567
+                8319269558
               </div>
               <div class="mb-3">
                 <i class="fas fa-envelope text-warning me-3"></i>
                 <strong>Email:</strong><br>
-                info@tpshinauta.edu
+                tpshinauta@gmail.com
               </div>
               <div class="mb-3">
                 <i class="fas fa-clock text-warning me-3"></i>
@@ -41,55 +41,10 @@
             <div class="card-body">
               <h3 class="card-title text-primary mb-4">Location</h3>
               <img src="assets/images/school.jpeg" alt="School Building" class="img-fluid rounded shadow">
-              <p class="mt-3 text-muted">123 Education Street, Hinauta City, HC 12345</p>
+              <p class="mt-3 text-muted">village and post Hinauta<br>
+                shahpur dist- Rewa (M.P)</p>
             </div>
           </div>
-        </div>
-      </div>
-
-      <!-- Contact Form -->
-      <div class="card shadow-sm">
-        <div class="card-body">
-          <h3 class="card-title text-primary mb-4">Send us a Message</h3>
-          <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-            <div class="row">
-              <div class="col-md-6 mb-3">
-                <label for="name" class="form-label">Your Name *</label>
-                <input type="text" class="form-control" id="name" formControlName="name" [class.is-invalid]="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">
-                @if (contactForm.get('name')?.invalid && contactForm.get('name')?.touched) {
-                  <div class="invalid-feedback">Name is required.</div>
-                }
-              </div>
-              <div class="col-md-6 mb-3">
-                <label for="email" class="form-label">Email Address *</label>
-                <input type="email" class="form-control" id="email" formControlName="email" [class.is-invalid]="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">
-                @if (contactForm.get('email')?.invalid && contactForm.get('email')?.touched) {
-                  <div class="invalid-feedback">
-                    @if (contactForm.get('email')?.errors?.['required']) {
-                      Email is required.
-                    } @else if (contactForm.get('email')?.errors?.['email']) {
-                      Please enter a valid email address.
-                    }
-                  </div>
-                }
-              </div>
-            </div>
-            <div class="mb-3">
-              <label for="subject" class="form-label">Subject *</label>
-              <input type="text" class="form-control" id="subject" formControlName="subject" [class.is-invalid]="contactForm.get('subject')?.invalid && contactForm.get('subject')?.touched">
-              @if (contactForm.get('subject')?.invalid && contactForm.get('subject')?.touched) {
-                <div class="invalid-feedback">Subject is required.</div>
-              }
-            </div>
-            <div class="mb-3">
-              <label for="message" class="form-label">Message *</label>
-              <textarea class="form-control" id="message" rows="5" formControlName="message" [class.is-invalid]="contactForm.get('message')?.invalid && contactForm.get('message')?.touched"></textarea>
-              @if (contactForm.get('message')?.invalid && contactForm.get('message')?.touched) {
-                <div class="invalid-feedback">Message is required.</div>
-              }
-            </div>
-            <button type="submit" class="btn btn-primary btn-lg" [disabled]="contactForm.invalid">Send Message</button>
-          </form>
         </div>
       </div>
     </div>

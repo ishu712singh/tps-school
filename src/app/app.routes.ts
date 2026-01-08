@@ -1,25 +1,30 @@
 import { Routes } from '@angular/router';
+import { HomeComponent } from './features/home/home.component';
+import { AboutComponent } from './features/about/about.component';
+import { AcademicsComponent } from './features/academics/academics.component';
+import { AdmissionsComponent } from './features/admissions/admissions.component';
+import { ContactComponent } from './features/contact/contact.component';
 
 export const routes: Routes = [
   {
     path: '',
-    loadComponent: () => import('./features/home/home.component').then(m => m.HomeComponent)
+    component: HomeComponent
   },
   {
     path: 'about',
-    loadComponent: () => import('./features/about/about.component').then(m => m.AboutComponent)
+    component: AboutComponent
   },
   {
     path: 'academics',
-    loadComponent: () => import('./features/academics/academics.component').then(m => m.AcademicsComponent)
+    component: AcademicsComponent
   },
   {
     path: 'admissions',
-    loadComponent: () => import('./features/admissions/admissions.component').then(m => m.AdmissionsComponent)
+    component: AdmissionsComponent
   },
   {
     path: 'contact',
-    loadComponent: () => import('./features/contact/contact.component').then(m => m.ContactComponent)
+    component: ContactComponent
   },
   {
     path: '**',
